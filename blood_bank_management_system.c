@@ -7,7 +7,15 @@
 struct BloodGroup{
     char bloodType[10];
     int quantity;
-};
+void updateBloodQuantity(struct BloodGroup *bloodGroups, int count, const char *bloodType, int quantity) {
+    if (quantity < 0) {
+        printf("Quantity cannot be negative.\n");
+        return;
+    }
+    if (bloodGroups[*count].quantity < 0) {
+        printf("Quantity cannot be negative.\n");
+        return;
+    }
 
 void addBloodGroup(struct BloodGroup *bloodGroups, int *count){
    if(*count >= MAX_BLOOD_GROUPS){
@@ -65,7 +73,10 @@ void displayBloodGroups(struct BloodGroup *bloodGroups, int count) {
 }
 
 void updateBloodQuantity(struct BloodGroup *bloodGroups, int count,const char *bloodType, int quantity) {
-    int index = searchBloodGroup(bloodGroups, count, bloodType);
+    int index = searchBloodGroup(bloodGroups, count, bloodTy};
+
+int searchBloodGroup(struct BloodGroup *bloodGroups, int count, const char *bloodType);
+void displayBloodGroups(struct BloodGroup *bloodGroups, int count);pe);
     if (index == -1) {
         printf("Blood group not found.\n");
         return;
