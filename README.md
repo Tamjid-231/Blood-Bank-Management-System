@@ -1,6 +1,8 @@
 # Blood Bank Management System
 
-This is a menu-based console project written in C. I created it as a student project to practise structures, arrays, functions, searching and updating records.
+> **Project type:** Academic Project
+
+This is an academic, menu-based console project written in C. I created it to practise structures, arrays, functions, searching and updating records.
 
 ## Features
 
