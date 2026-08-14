@@ -22,7 +22,7 @@ The project does not use a database or file storage, so the entered data is remo
 A C compiler such as GCC is required.
 
 ```bash
-gcc "Blood Bank Management System.c.c" -o blood_bank
+gcc blood_bank_management_system.c -o blood_bank
 ```
 
 Run on Windows:
